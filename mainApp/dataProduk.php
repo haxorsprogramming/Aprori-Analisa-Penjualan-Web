@@ -10,10 +10,8 @@
                     <thead style="border-top: 1px solid #d0d0d0;">
                         <tr>
                             <th>No</th>
-                            <th>Username</th>
-                            <th>Nama</th>
-                            <th>Hp / Email</th>
-                            <th>Aksi</th>
+                            <th>Kode Produk</th>
+                            <th>Nama Produk</th>
                         </tr>
                     </thead>
                     

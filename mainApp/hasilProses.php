@@ -15,8 +15,7 @@
                     </thead>
                     <tbody>
                         <tr v-for='dh in dataHasil'>
-                            
-                            <td>{{ dh.pola }}</td>
+                            <td v-html="dh.pola"></td>
                             <td>{{ dh.support }}</td>
                             <td>{{ dh.confidence }}</td>
                             <td>{{ dh.nilai }}</td>
@@ -42,7 +41,7 @@
     
     loadHasil();
 
-    async function loadHasil()
+    function loadHasil()
     {
         axios.get('http://127.0.0.1:8000/proses-apriori/').then(function(res) {
         let obj = res.data;
@@ -67,8 +66,11 @@
             });
         }
 
-        tidur_bentar(100);
-        $('#tblHasil').dataTable();
+        setTimeout(function(){
+            $("#tblHasil").dataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        }, 1000);
 
 
 
