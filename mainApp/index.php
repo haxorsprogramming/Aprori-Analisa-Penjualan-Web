@@ -71,7 +71,7 @@ include('../config/db.php');
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" @click="menuAtc('admin/main-app/binaan/list', 'Binaan')">
+                        <a class="nav-link" href="javascript:void(0)" @click="menuAtc('mainApp/dataTransaksi.php', 'Data Transaksi')">
                             <i class="nav-icon icon-list"></i> Data Transaksi
                         </a>
                     </li>
